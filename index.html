@@ -1,92 +1,108 @@
-<!DOCTYPE html><html class="light" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{try{
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "inverse-on-surface": "#f4f0ed",
-                        "tertiary-fixed": "#e6e0d9",
-                        "on-primary-fixed": "#32110c",
-                        "primary-container": "#7a534c",
-                        "error-container": "#93000a",
-                        "secondary-fixed": "#e1e3de",
-                        "on-secondary": "#ffffff",
-                        "tertiary": "#645f5b",
-                        "tertiary-fixed-dim": "#cac5be",
-                        "error": "#ba1a1a",
-                        "on-background": "#1c1b1b",
-                        "on-surface-variant": "#494645",
-                        "surface-container-high": "#e8e7e2",
-                        "on-tertiary-container": "#f1eae3",
-                        "surface-container-lowest": "#ffffff",
-                        "background": "#faf9f5",
-                        "secondary": "#5f615e",
-                        "secondary-fixed-dim": "#c5c7c2",
-                        "on-primary": "#ffffff",
-                        "surface-bright": "#faf9f5",
-                        "primary": "#603b35",
-                        "tertiary-container": "#4c4844",
-                        "outline-variant": "#cdc5c3",
-                        "on-tertiary-fixed": "#201c18",
-                        "surface": "#faf9f5",
-                        "surface-tint": "#90655e",
-                        "on-secondary-fixed-variant": "#474946",
-                        "on-secondary-fixed": "#1b1c1a",
-                        "inverse-surface": "#313030",
-                        "surface-container-highest": "#e3e2dd",
-                        "surface-variant": "#f0e7e5",
-                        "on-secondary-container": "#ebede7",
-                        "inverse-primary": "#ffb4a6",
-                        "outline": "#857f7d",
-                        "surface-container-low": "#f4f4f0",
-                        "secondary-container": "#474946",
-                        "on-surface": "#1c1b1b",
-                        "primary-fixed": "#ffdad3",
-                        "on-tertiary-fixed-variant": "#4c4844",
-                        "on-error": "#ffffff",
-                        "on-primary-fixed-variant": "#744e47",
-                        "on-primary-container": "#ffdad3",
-                        "surface-container": "#eeeeea",
-                        "on-error-container": "#ffdad6",
-                        "on-tertiary": "#ffffff",
-                        "surface-dim": "#dadad6",
-                        "primary-fixed-dim": "#ffb4a6"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "margin-mobile": "20px",
-                        "section-gap": "120px",
-                        "gutter": "24px",
-                        "container-max": "1200px",
-                        "base": "8px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Hanken Grotesk"],
-                        "code-sm": ["JetBrains Mono"],
-                        "body-lg": ["Inter"],
-                        "headline-md": ["Hanken Grotesk"],
-                        "label-caps": ["JetBrains Mono"],
-                        "body-md": ["Inter"],
-                        "display-lg-mobile": ["Hanken Grotesk"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "code-sm": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
-                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}]
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            try {
+                tailwind.config = {
+                    darkMode: "class",
+                    theme: {
+                        extend: {
+                            "colors": {
+                                "inverse-on-surface": "#f4f0ed",
+                                "tertiary-fixed": "#e6e0d9",
+                                "on-primary-fixed": "#32110c",
+                                "primary-container": "#7a534c",
+                                "error-container": "#93000a",
+                                "secondary-fixed": "#e1e3de",
+                                "on-secondary": "#ffffff",
+                                "tertiary": "#645f5b",
+                                "tertiary-fixed-dim": "#cac5be",
+                                "error": "#ba1a1a",
+                                "on-background": "#1c1b1b",
+                                "on-surface-variant": "#494645",
+                                "surface-container-high": "#e8e7e2",
+                                "on-tertiary-container": "#f1eae3",
+                                "surface-container-lowest": "#ffffff",
+                                "background": "#faf9f5",
+                                "secondary": "#5f615e",
+                                "secondary-fixed-dim": "#c5c7c2",
+                                "on-primary": "#ffffff",
+                                "surface-bright": "#faf9f5",
+                                "primary": "#603b35",
+                                "tertiary-container": "#4c4844",
+                                "outline-variant": "#cdc5c3",
+                                "on-tertiary-fixed": "#201c18",
+                                "surface": "#faf9f5",
+                                "surface-tint": "#90655e",
+                                "on-secondary-fixed-variant": "#474946",
+                                "on-secondary-fixed": "#1b1c1a",
+                                "inverse-surface": "#313030",
+                                "surface-container-highest": "#e3e2dd",
+                                "surface-variant": "#f0e7e5",
+                                "on-secondary-container": "#ebede7",
+                                "inverse-primary": "#ffb4a6",
+                                "outline": "#857f7d",
+                                "surface-container-low": "#f4f4f0",
+                                "secondary-container": "#474946",
+                                "on-surface": "#1c1b1b",
+                                "primary-fixed": "#ffdad3",
+                                "on-tertiary-fixed-variant": "#4c4844",
+                                "on-error": "#ffffff",
+                                "on-primary-fixed-variant": "#744e47",
+                                "on-primary-container": "#ffdad3",
+                                "surface-container": "#eeeeea",
+                                "on-error-container": "#ffdad6",
+                                "on-tertiary": "#ffffff",
+                                "surface-dim": "#dadad6",
+                                "primary-fixed-dim": "#ffb4a6"
+                            },
+                            "borderRadius": {
+                                "DEFAULT": "0.25rem",
+                                "lg": "0.5rem",
+                                "xl": "0.75rem",
+                                "full": "9999px"
+                            },
+                            "spacing": {
+                                "margin-mobile": "20px",
+                                "section-gap": "120px",
+                                "gutter": "24px",
+                                "container-max": "1200px",
+                                "base": "8px"
+                            },
+                            "fontFamily": {
+                                "display-lg": ["Hanken Grotesk"],
+                                "code-sm": ["JetBrains Mono"],
+                                "body-lg": ["Inter"],
+                                "headline-md": ["Hanken Grotesk"],
+                                "label-caps": ["JetBrains Mono"],
+                                "body-md": ["Inter"],
+                                "display-lg-mobile": ["Hanken Grotesk"]
+                            },
+                            "fontSize": {
+                                "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                                "code-sm": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                                "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                                "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                                "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}]
+                            }
+                        }
                     }
                 }
-            }
-        }
-    }catch(_e){}}catch(_e){}</script></head><body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary/30 selection:text-primary-fixed">
+            } catch (_e) {}
+        } catch (_e) {}
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary/30 selection:text-primary-fixed">
 <!-- Ambient Background Glows -->
 <div class="fixed inset-0 z-0 pointer-events-none">
 <div class="absolute top-[-10%] left-[20%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]"></div>
@@ -97,10 +113,17 @@
 <div class="flex items-center gap-4">
 <span class="font-display-lg-mobile text-display-lg-mobile font-bold text-primary dark:text-primary-fixed text-xl">DataSciencePortfolio</span>
 </div>
-<nav class="hidden md:flex gap-8 items-center"><a class="font-body-md text-body-md text-primary dark:text-primary-fixed border-b-2 border-primary hover:bg-primary/10 hover:text-primary transition-all duration-300 ease-in-out py-1" href="#home">Home</a><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#sobre-mim">Sobre Mim</a><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#ferramentas">Ferramentas</a><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#experiencia">Experiência</a><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#formacao">Formação</a><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#projetos">Projetos</a></nav>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed border-b-2 border-primary hover:bg-primary/10 hover:text-primary transition-all duration-300 ease-in-out py-1" href="#home">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#sobre-mim">Sobre Mim</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#experiencia">Experiência</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#formacao">Formação</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#ferramentas">Ferramentas</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 py-1" href="#projetos">Projetos</a>
+</nav>
 <button class="font-label-caps text-label-caps bg-primary text-on-primary px-5 py-2.5 rounded-full hover:bg-primary/90 transition-colors flex items-center gap-2 shadow-sm">
-            Get in Touch
-            <span class="material-symbols-outlined text-sm">arrow_outward</span>
+        Get in Touch
+        <span class="material-symbols-outlined text-sm">arrow_outward</span>
 </button>
 </header>
 <main class="relative z-10 pt-32 pb-section-gap flex flex-col gap-section-gap">
@@ -108,22 +131,22 @@
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full flex flex-col items-center text-center pt-16 md:pt-24" id="home">
 <div class="relative mb-8">
 <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
-<img alt="Profile Avatar" class="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-outline-variant/30 shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNTT4jiZE5jMzOZN2gGNh5hOMAPfJSEySKPzdcF5_q0u-75zWsbBiEpvi2B5F5zrA7n5YbMk0zhpCxi6dwbiB5h8l05WkFUqrPcZEg2jxeBuzU0KwSFtMK8j-YGIBzN7BZHikShx1qHUzGq90L9QGsn07-hzJNBi3pK_VRg3d35sAPePPdxsWqzT0O29r-W0cdoiQjCM_xIZoiKqztmRxsKYRJmc5dGIDHVe1w8vgdOXz6x8ujvuhO688iYv59qG9XeAHj4a2yLos" style="object-position: center 20%;">
+<img alt="Profile Avatar" class="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-outline-variant/30 shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNTT4jiZE5jMzOZN2gGNh5hOMAPfJSEySKPzdcF5_q0u-75zWsbBiEpvi2B5F5zrA7n5YbMk0zhpCxi6dwbiB5h8l05WkFUqrPcZEg2jxeBuzU0KwSFtMK8j-YGIBzN7BZHikShx1qHUzGq90L9QGsn07-hzJNBi3pK_VRg3d35sAPePPdxsWqzT0O29r-W0cdoiQjCM_xIZoiKqztmRxsKYRJmc5dGIDHVe1w8vgdOXz6x8ujvuhO688iYv59qG9XeAHj4a2yLos" style="object-position: center 20%;"/>
 </div>
 <div class="inline-flex items-center gap-2 bg-surface-container/50 border border-outline-variant/30 px-4 py-1.5 rounded-full mb-6">
 <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
 <span class="font-label-caps text-label-caps text-primary">Available for new projects</span>
 </div>
 <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface max-w-4xl mb-6">
-                Simão Urpia | <span class="text-primary">Cientista de Dados</span>
+            Simão Urpia | <span class="text-primary">Cientista de Dados</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">Transformando dados complexos em insights estratégicos. Especialista em machine learning, modelagem estatística e análise de dados massivos para otimização de processos e decisões de negócio.</p>
 <div class="flex flex-col sm:flex-row gap-4">
 <button class="font-label-caps text-label-caps bg-primary text-on-primary px-8 py-4 rounded-full hover:bg-primary/90 transition-colors shadow-md">
-                    View My Work
-                </button>
+                View My Work
+            </button>
 <button class="font-label-caps text-label-caps bg-transparent border border-tertiary text-tertiary hover:border-tertiary hover:bg-tertiary/5 px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2">
-                    Let's Collaborate <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                Let's Collaborate <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
 </div>
 <!-- Social/Tech Links -->
@@ -144,7 +167,10 @@
 <div class="flex flex-col lg:flex-row gap-12 items-stretch">
 <!-- Left Card -->
 <div class="w-full lg:w-1/3 bg-surface-container-low border border-outline-variant/30 rounded-3xl p-8 flex flex-col items-center shadow-md">
-<div class="w-full aspect-square rounded-2xl border-4 border-surface overflow-hidden mb-6 relative shadow-sm"><img alt="Profile" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJw0sj0LxwHgMRdfd-hAe9S68X9cbpVqWyu9XCc7gm-Mq24ZaWx5y3DZFYytS7MBYARptFDtqGvkYG99D01NTcuHixdBYG2F7GEpXBjfFaXpFsYD_Tktw1RAyn2xSeRUrf8ONwF-yGWQtuvBXYjIKiGQl1Pfs7TNY9Ib0bmmy9s18WjjyTFRnKZnY8YY74pkk5kMsggoBNNVohH6jSvyom_fXK0OL2IJ051YnSMirIMMlejFgp0XaTL4LmpyPVFpLuPyUuNDmpFMc"><div class="absolute bottom-2 right-2 bg-surface rounded-full p-1 border-2 border-surface"><span class="material-symbols-outlined text-primary text-sm bg-surface-container rounded-full p-0.5">check_circle</span></div></div>
+<div class="w-full aspect-square rounded-2xl border-4 border-surface overflow-hidden mb-6 relative shadow-sm">
+<img alt="Profile" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJw0sj0LxwHgMRdfd-hAe9S68X9cbpVqWyu9XCc7gm-Mq24ZaWx5y3DZFYytS7MBYARptFDtqGvkYG99D01NTcuHixdBYG2F7GEpXBjfFaXpFsYD_Tktw1RAyn2xSeRUrf8ONwF-yGWQtuvBXYjIKiGQl1Pfs7TNY9Ib0bmmy9s18WjjyTFRnKZnY8YY74pkk5kMsggoBNNVohH6jSvyom_fXK0OL2IJ051YnSMirIMMlejFgp0XaTL4LmpyPVFpLuPyUuNDmpFMc"/>
+<div class="absolute bottom-2 right-2 bg-surface rounded-full p-1 border-2 border-surface"><span class="material-symbols-outlined text-primary text-sm bg-surface-container rounded-full p-0.5">check_circle</span></div>
+</div>
 <h3 class="font-headline-md text-3xl text-on-surface font-bold mb-1 text-center">Simão Urpia</h3>
 <p class="font-body-md text-on-surface-variant mb-10 text-center font-medium">Data Scientist &amp; Analyst</p>
 <div class="w-full flex flex-col gap-4">
@@ -161,19 +187,40 @@
 <span class="font-body-md text-on-surface-variant text-sm">Salvador, BA, Brazil</span>
 </div>
 </div>
-<div class="w-full mt-8 pt-8 border-t border-outline-variant/20 flex flex-col gap-6"><div class="flex flex-col gap-3"><h4 class="font-label-caps text-label-caps text-on-surface-variant opacity-70">Hard Skills</h4><div class="flex gap-3"><div class="w-10 h-10 rounded-lg bg-background border border-outline-variant/30 p-1.5 flex items-center justify-center hover:border-primary transition-colors"><img alt="Python" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_3bIgLqONPrzQSTUJAhdEq813L5R0PGNWXho5x9eoexcOzCv6utu2ucky-TZLZn1_XEKvGKNUHm4h3fn5SqQEQ_K-jsNRibM-Xh5xsgwyV1Xn1dFGfCKvFfA3Xme7cw1E_F8azcEXzKqJOLEDYfaQuIVOJC7dOhlw04l80ER9heIhIoL_8k7CnGapBRg6-NyKv4ULKXoeyLuVcgjt9S3wkURN648a2ftoFfvczb1Sb43mNSgHF-VnMs18KRj8CXDgUceLjjGqKuI"></div><div class="w-10 h-10 rounded-lg bg-background border border-outline-variant/30 p-1.5 flex items-center justify-center hover:border-primary transition-colors"><img alt="SQL" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGQcPWj5eaApZtjgITvQbdIEOeXY6jg3moHjaUXJ0QtoYfbZY33Lb9K3E84Rhs6RFI-UN11evWLwBEHWarke84JIReEfMsrNxxWHkfg155EXJqy4Xgi4MXD5vf8zLjx3mBzbBjd1zxgMGlZHiRAojS5Lh1cV--KGfWooACy9TQbrSZwGxKeps8xGy5eVYPqxumATFWJKXZyf0XyHinwOolYGyg84QCOOwcYEoRL4qB7vR7rLTyksNaDgAgY1XAUQ8mrXtW8k2-Otk"></div><div class="w-10 h-10 rounded-lg bg-background border border-outline-variant/30 p-1.5 flex items-center justify-center hover:border-primary transition-colors"><img alt="R" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKDL7rbCOsEWlGKRTTkC7X4olL3eeZqbd24XGLcO0gxI5tRUyusG1T24qw4k-u8gMU9WYjFuVAC8aIFH13lyeaePIx48K2QU-H9JWgpgMA43hkATHmacqdvdFq9mCN3IwQoRuM0cvQF7BPGhnkKb3PBJdlBX8-oGabkyK0uzX9nGF2bfS18CC-DvjTnKXuryJMNzhthrvE_zvRoYr3patO2D--wRztUozhE2JokIgbMmDaeQIcdsalXvACvykab1Po5SrOxj6zLdY"></div></div></div><div class="flex flex-col gap-3"><h4 class="font-label-caps text-label-caps text-on-surface-variant opacity-70">Languages</h4><div class="space-y-2"><div class="flex justify-between items-center"><span class="font-body-md text-sm text-on-surface">Português</span><span class="font-code-sm text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full">NATIVO</span></div><div class="flex justify-between items-center"><span class="font-body-md text-sm text-on-surface">Inglês</span><span class="font-code-sm text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full">FLUENTE</span></div><div class="flex justify-between items-center"><span class="font-body-md text-sm text-on-surface">Espanhol</span><span class="font-code-sm text-[10px] bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full">BÁSICO</span></div></div></div></div></div>
+<div class="w-full mt-8 pt-8 border-t border-outline-variant/20 flex flex-col gap-6">
+<div class="flex flex-col gap-3">
+<h4 class="font-label-caps text-label-caps text-on-surface-variant opacity-70">Hard Skills</h4>
+<div class="flex gap-3">
+<div class="w-10 h-10 rounded-lg bg-background border border-outline-variant/30 p-1.5 flex items-center justify-center hover:border-primary transition-colors"><img alt="Python" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_3bIgLqONPrzQSTUJAhdEq813L5R0PGNWXho5x9eoexcOzCv6utu2ucky-TZLZn1_XEKvGKNUHm4h3fn5SqQEQ_K-jsNRibM-Xh5xsgwyV1Xn1dFGfCKvFfA3Xme7cw1E_F8azcEXzKqJOLEDYfaQuIVOJC7dOhlw04l80ER9heIhIoL_8k7CnGapBRg6-NyKv4ULKXoeyLuVcgjt9S3wkURN648a2ftoFfvczb1Sb43mNSgHF-VnMs18KRj8CXDgUceLjjGqKuI"/></div>
+<div class="w-10 h-10 rounded-lg bg-background border border-outline-variant/30 p-1.5 flex items-center justify-center hover:border-primary transition-colors"><img alt="SQL" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGQcPWj5eaApZtjgITvQbdIEOeXY6jg3moHjaUXJ0QtoYfbZY33Lb9K3E84Rhs6RFI-UN11evWLwBEHWarke84JIReEfMsrNxxWHkfg155EXJqy4Xgi4MXD5vf8zLjx3mBzbBjd1zxgMGlZHiRAojS5Lh1cV--KGfWooACy9TQbrSZwGxKeps8xGy5eVYPqxumATFWJKXZyf0XyHinwOolYGyg84QCOOwcYEoRL4qB7vR7rLTyksNaDgAgY1XAUQ8mrXtW8k2-Otk"/></div>
+<div class="w-10 h-10 rounded-lg bg-background border border-outline-variant/30 p-1.5 flex items-center justify-center hover:border-primary transition-colors"><img alt="R" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKDL7rbCOsEWlGKRTTkC7X4olL3eeZqbd24XGLcO0gxI5tRUyusG1T24qw4k-u8gMU9WYjFuVAC8aIFH13lyeaePIx48K2QU-H9JWgpgMA43hkATHmacqdvdFq9mCN3IwQoRuM0cvQF7BPGhnkKb3PBJdlBX8-oGabkyK0uzX9nGF2bfS18CC-DvjTnKXuryJMNzhthrvE_zvRoYr3patO2D--wRztUozhE2JokIgbMmDaeQIcdsalXvACvykab1Po5SrOxj6zLdY"/></div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-caps text-label-caps text-on-surface-variant opacity-70">Languages</h4>
+<div class="space-y-2">
+<div class="flex justify-between items-center"><span class="font-body-md text-sm text-on-surface">Português</span><span class="font-code-sm text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full">NATIVO</span></div>
+<div class="flex justify-between items-center"><span class="font-body-md text-sm text-on-surface">Inglês</span><span class="font-code-sm text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full">FLUENTE</span></div>
+<div class="flex justify-between items-center"><span class="font-body-md text-sm text-on-surface">Espanhol</span><span class="font-code-sm text-[10px] bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full">BÁSICO</span></div>
+</div>
+</div>
+</div>
+</div>
 <!-- Right Content -->
 <div class="w-full lg:w-2/3 flex flex-col justify-center">
 <div class="inline-flex items-center bg-surface-container px-5 py-2.5 rounded-full mb-8 w-max border border-outline-variant/50 shadow-sm">
 <span class="font-label-caps text-primary font-bold tracking-wider">Sobre Mim</span>
 </div>
 <h2 class="font-headline-md text-4xl md:text-5xl text-on-surface font-bold mb-8 leading-tight">Engenheiro Químico &amp; Cientista de Dados</h2>
-<div class="font-body-lg text-on-surface-variant flex flex-col gap-6 mb-16 text-lg"><p class="">Engenheiro Químico e Cientista de Dados, atual mestrando em Engenharia Industrial pela UFBA. Com 4 anos de experiência como Cientista de Dados em diferentes contextos, atuo na resolução de problemas complexos por meio de Estatística, Modelagem Preditiva, descritiva e Visualização de Dados para tomada de decisão. Atualmente Possuo 4 publicações acadêmicas na área, além de otruos projetos em portfólio.</p><p class="">No dia a dia atuo no tratamento, integração, validação e análise de bases massivas, incluindo bases governamentais com mais de 36 milhões de registros, e bases de dados de negócios. Para isso utilizo Python, R, SQL através de bibliotecas como Pandas, NumPy, Scikit-learn, Matplotlib, ggplot2, tidyverse.</p><p class="">Possuo experiência industrial na multinacional Continental, onde desenvolvi e geri KPIs, dashboards em Power BI e documentação técnica. Colaborei com equipes multidisciplinares na solução estruturada de problemas em processos industrias (aplicando metodologias como Scrum, A3 e Lean), utilizando o inglês para comunicação com times globais.</p></div>
+<div class="font-body-lg text-on-surface-variant flex flex-col gap-6 mb-16 text-lg">
+<p class="">Engenheiro Químico e Cientista de Dados, atual mestrando em Engenharia Industrial pela UFBA. Com 4 anos de experiência como Cientista de Dados em diferentes contextos, atuo na resolução de problemas complexos por meio de Estatística, Modelagem Preditiva, descritiva e Visualização de Dados para tomada de decisão. Atualmente Possuo 4 publicações acadêmicas na área, além de otruos projetos em portfólio.</p>
+<p class="">No dia a dia atuo no tratamento, integração, validação e análise de bases massivas, incluindo bases governamentais com mais de 36 milhões de registros, e bases de dados de negócios. Para isso utilizo Python, R, SQL através de bibliotecas como Pandas, NumPy, Scikit-learn, Matplotlib, ggplot2, tidyverse.</p>
+<p class="">Possuo experiência industrial na multinacional Continental, onde desenvolvi e geri KPIs, dashboards em Power BI e documentação técnica. Colaborei com equipes multidisciplinares na solução estruturada de problemas em processos industrias (aplicando metodologias como Scrum, A3 e Lean), utilizando o inglês para comunicação with times globais.</p>
+</div>
 </div>
 </div>
 </section>
-<!-- 3. Skills & Expertise Section (Technical Expertise) -->
-<!-- 4 & 5. Currículo Section -->
+<!-- 3. Currículo Section -->
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full" id="experiencia">
 <div class="flex flex-col items-center mb-12">
 <div class="flex items-center gap-4">
@@ -184,8 +231,6 @@
 <p class="font-body-md text-on-surface-variant mt-4 text-center max-w-2xl">Uma trajetória de impulsionar decisões estratégicas de negócios por meio de análise de dados, machine learning e desenvolvimento de pipelines escaláveis.</p>
 </div>
 <div class="flex flex-col lg:flex-row gap-8 items-start">
-<!-- Left Column: Profile Card -->
-<!-- Right Column: Timeline -->
 <div class="w-full flex flex-col gap-12 bg-surface-container-low p-6 md:p-8 rounded-2xl border border-outline-variant/30 shadow-sm">
 <!-- Experience -->
 <div>
@@ -205,7 +250,11 @@
 <span class="material-symbols-outlined text-[18px]">domain</span>
 <span class="font-body-md font-medium">UFBA</span>
 </div>
-<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5"><li class="">Liderança de pesquisa em bases massivas (&gt;36M registros) com desenvolvimento de pipelines robustos em R, Python e SQL para processamento de grande volume de dados.</li><li class="">Implementação de modelos de modelagem preditiva para suporte à decisão estratégica em contextos industriais, de governança e de negócios. O principal modelo desenvolvido nesta pesquisa identifica <b data-index-in-node="197" data-path-to-node="4,1">hotspots</b> de perigo para contaminação ambiental por fármacos nas 27 capitais do país, viabilizando a priorização no direcionamento de ações e recursos.</li><li class="">Apresentação de resultados em eventos de prestígio, como o Encontro Baiano de Estatística (EBEST), o Congresso Brasileiro de Engenharia Sanitária e Ambiental e a Conferência Nacional dos Agentes Produtores e Usuários de Dados - CONFEST/CONFEGE.</li></ul>
+<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5">
+<li>Liderança de pesquisa em bases massivas (&gt;36M registros) com desenvolvimento de pipelines robustos em R, Python e SQL para processamento de grande volume de dados.</li>
+<li>Implementação de modelos de modelagem preditiva para suporte à decisão estratégica em contextos industriais, de governança e de negócios. O principal modelo desenvolvido nesta pesquisa identifica <b>hotspots</b> de perigo para contaminação ambiental por fármacos nas 27 capitais do país, viabilizando a priorização no direcionamento de ações e recursos.</li>
+<li>Apresentação de resultados em eventos de prestígio, como o Encontro Baiano de Estatística (EBEST), o Congresso Brasileiro de Engenharia Sanitária e Ambiental e a Conferência Nacional dos Agentes Produtores e Usuários de Dados - CONFEST/CONFEGE.</li>
+</ul>
 </div>
 <!-- Item 2: Estagiário Continental -->
 <div class="relative pl-8 border-l-2 border-primary/20">
@@ -218,7 +267,10 @@
 <span class="material-symbols-outlined text-[18px]">domain</span>
 <span class="font-body-md font-medium">Continental</span>
 </div>
-<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5"><li class="">Estruturação e monitoramento contínuo de KPIs críticos de qualidade e produtividade (scrap e retrabalho) através de dashboards interativos desenvolvidos em Power BI, automatizando fluxos operacionais através de Querys para reduzir o tempo de processamento manual de 8 horas de trabalho para cerca de 20 minutos e apoiar a tomada de decisão técnica.</li><li class="">Aplicação rigorosa de metodologias A3 e Lean para a resolução estruturada de problemas complexos e análise profunda de causa raiz, resultando em melhorias mensuráveis na eficiência operacional e na padronização de processos industriais.</li></ul>
+<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5">
+<li>Estruturação e monitoramento contínuo de KPIs críticos de qualidade e produtividade (scrap e retrabalho) através de dashboards interativos desenvolvidos em Power BI, automatizando fluxos operacionais através de Querys para reduzir o tempo de processamento manual de 8 horas de trabalho para cerca de 20 minutos e apoiar a tomada de decisão técnica.</li>
+<li>Aplicação rigorosa de metodologias A3 e Lean para a resolução estruturada de problemas complexos e análise profunda de causa raiz, resultando em melhorias mensuráveis na eficiência operacional e na padronização de processos industriais.</li>
+</ul>
 </div>
 <!-- Item 3: Estagiário de Docência -->
 <div class="relative pl-8 border-l-2 border-primary/20">
@@ -231,7 +283,10 @@
 <span class="material-symbols-outlined text-[18px]">domain</span>
 <span class="font-body-md font-medium">UFBA</span>
 </div>
-<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5"><li class="">Suporte pedagógico e desenvolvimento de materiais práticos em Estatística e Ciência de Dados, utilizando o Python no ambiente do Google Colab e abrangendo desde análise exploratória e testes de hipóteses até modelagem de modelos preditivos.</li><li class="">A de recursos educacionais focados em manipulação e visualização de dados, teve como objetivo o de facilitar a compreensão de conceitos técnicos e demonstrando a aplicação prática da programação nas decisões de negócio.</li></ul>
+<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5">
+<li>Suporte pedagógico e desenvolvimento de materiais práticos em Estatística e Ciência de Dados, utilizando o Python no ambiente do Google Colab e abrangendo desde análise exploratória e testes de hipóteses até modelagem de modelos preditivos.</li>
+<li>A de recursos educacionais focados em manipulação e visualização de dados, teve como objetivo o de facilitar a compreensão de conceitos técnicos e demonstrando a aplicação prática da programação nas decisões de negócio.</li>
+</ul>
 </div>
 <!-- Item 4: Pesquisador GAMMA Lab -->
 <div class="relative pl-8 border-l-2 border-primary/20">
@@ -244,7 +299,11 @@
 <span class="material-symbols-outlined text-[18px]">domain</span>
 <span class="font-body-md font-medium">UFBA / GAMMA Lab</span>
 </div>
-<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5"><li class="">Desenvolvimento de pesquisa aplicada com bases massivas utilizando R, Python, SQL e envolvendo coleta, tratamento, integração, padronização, validação e análise de mais de 36 milhões de registros.</li><li class="">Criação de visualizações de dados interativas utilizando R (ggplot2, Shiny) para comunicação de insights para estudantes de escolas públicas em Salvador.</li><li class="">Participação ativa no programa 'Data Science in Education and Culture', integrando tecnologia e humanidades. Apresentação técnica em inglês em conferência internacional da UNESCO-IWRA, e no seminário internacional de estatística com R comunicando resultados de ciência de dados aplicada para público acadêmico.</li></ul>
+<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5">
+<li>Desenvolvimento de pesquisa aplicada com bases massivas utilizando R, Python, SQL e envolvendo coleta, tratamento, integração, padronização, validação e análise de mais de 36 milhões de registros.</li>
+<li>Criação de visualizações de dados interativas utilizando R (ggplot2, Shiny) para comunicação de insights para estudantes de escolas públicas em Salvador.</li>
+<li>Participação ativa no programa 'Data Science in Education and Culture', integrando tecnologia e humanidades. Apresentação técnica em inglês em conferência internacional da UNESCO-IWRA, e no seminário internacional de estatística com R comunicando resultados de ciência de dados aplicada para público acadêmico.</li>
+</ul>
 </div>
 <!-- Item 5: Gerente Prisma Jr. -->
 <div class="relative pl-8 border-l-2 border-primary/20">
@@ -257,7 +316,11 @@
 <span class="material-symbols-outlined text-[18px]">domain</span>
 <span class="font-body-md font-medium">Prisma Jr.</span>
 </div>
-<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5"><li class="">Estruturação do serviço de Otimização de Processos, com foco em mapeamento de fluxos operacionais, melhoria contínua e análise de eficiência.</li><li class="">Atuação na análise de tendências de mercado baseada em dados de personas, hábitos de consumo e oportunidades de novos serviços para a empresa.</li><li class="">Gestão de pessoas, estruturação de processos seletivos, acompanhamento de equipes multidisciplinares e atuação em iniciativas de diversidade e inclusão</li></ul>
+<ul class="font-body-md text-on-surface-variant space-y-2 list-disc pl-5">
+<li>Estruturação do serviço de Otimização de Processos, com foco em mapeamento de fluxos operacionais, melhoria contínua e análise de eficiência.</li>
+<li>Atuação na análise de tendências de mercado baseada em dados de personas, hábitos de consumo e oportunidades de novos serviços para a empresa.</li>
+<li>Gestão de pessoas, estruturação de processos seletivos, acompanhamento de equipes multidisciplinares e atuação em iniciativas de diversidade e inclusão</li>
+</ul>
 </div>
 </div>
 </div>
@@ -267,7 +330,7 @@
 <span class="material-symbols-outlined text-3xl text-primary">school</span>
 <h3 class="font-headline-md text-2xl text-on-surface font-bold">Formação Acadêmica</h3>
 </div>
-<div class="relative pl-6 md:pl-8 border-l-2 border-outline-variant flex flex-col gap-10 gap-12">
+<div class="relative pl-6 md:pl-8 border-l-2 border-outline-variant flex flex-col gap-10">
 <!-- Item 1 -->
 <div class="relative">
 <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-secondary rounded-full border-4 border-surface-container-low"></div>
@@ -279,9 +342,7 @@
 <span class="font-body-md text-sm font-medium">UFBA</span>
 </div>
 </div>
-<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">
-                            Em andamento.
-                        </p>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">Em andamento.</p>
 </div>
 <!-- Item 2 -->
 <div class="relative">
@@ -294,30 +355,24 @@
 <span class="font-body-md text-sm font-medium">UFBA</span>
 </div>
 </div>
-<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">
-                            Concluída.
-                        </p>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">Concluída.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- 6. Projects Grid Section -->
-<!-- Call to Action -->
+<!-- 4. Tools & Certifications Section -->
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full" id="ferramentas">
-<div class="bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 md:p-16 flex flex-col md:flex-row gap-12 justify-between items-center relative overflow-hidden shadow-md"><!-- Abstract BG element -->
+<div class="bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 md:p-16 flex flex-col md:flex-row gap-12 justify-between items-center relative overflow-hidden shadow-md">
 <div class="absolute -right-20 -top-20 w-64 h-64 bg-tertiary/10 rounded-full blur-[80px] pointer-events-none"></div>
 <div class="w-full z-10">
 <div class="flex flex-col lg:flex-row gap-12">
-<!-- Left: Title & Description -->
 <div class="lg:w-1/3">
 <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Ferramentas &amp; Certificações</h2>
 <p class="font-body-md text-body-md text-on-surface-variant">Domínio técnico em stack de dados e metodologias de melhoria contínua.</p>
 </div>
-<!-- Right: Grid of Expertise -->
 <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- Linguagens & Dados -->
 <div class="bg-background/50 backdrop-blur-md border border-outline-variant/30 p-6 rounded-xl">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-primary">terminal</span>
@@ -329,19 +384,17 @@
 <span class="px-3 py-1 bg-surface-container rounded-full text-code-sm text-on-surface-variant border border-outline-variant/20">R (Tidyverse, data.table, tidymodels, ggplot2)</span>
 </div>
 </div>
-<!-- BI & Automação -->
 <div class="bg-background/50 backdrop-blur-md border border-outline-variant/30 p-6 rounded-xl">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-tertiary">monitoring</span>
 <h4 class="font-headline-md text-lg text-on-surface font-bold">BI &amp; Automação</h4>
 </div>
 <div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-surface-container rounded-full text-code-sm text-on-surface-variant border border-outline-variant/20">Power BI/Powe Query/<span class="" style="font-size: 8.5pt; font-family: Arial, sans-serif; color: rgb(34, 34, 34);">DAX</span></span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-code-sm text-on-surface-variant border border-outline-variant/20">Power BI/Powe Query/DAX</span>
 <span class="px-3 py-1 bg-surface-container rounded-full text-code-sm text-on-surface-variant border border-outline-variant/20">Excel/VBA</span>
 <span class="px-3 py-1 bg-surface-container rounded-full text-code-sm text-on-surface-variant border border-outline-variant/20">Selenium</span>
 </div>
 </div>
-<!-- Certificações -->
 <div class="bg-background/50 backdrop-blur-md border border-primary/20 p-6 rounded-xl">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-primary">verified</span>
@@ -362,11 +415,10 @@
 </div>
 </div>
 </div>
-<!-- Analytics -->
 <div class="bg-background/50 backdrop-blur-md border border-outline-variant/30 p-6 rounded-xl">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-tertiary">analytics</span>
-<h4 class="font-headline-md text-lg text-on-surface font-bold">Analytics e Methodologies&nbsp;</h4>
+<h4 class="font-headline-md text-lg text-on-surface font-bold">Analytics e Methodologies</h4>
 </div>
 <div class="flex flex-wrap gap-2">
 <span class="px-3 py-1 bg-surface-container rounded-full text-code-sm text-on-surface-variant border border-outline-variant/20">Estatística Aplicada e Modelagem Preditiva</span>
@@ -376,57 +428,75 @@
 </div>
 </div>
 </div>
-</div></div>
-</section><section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full text-center py-16" id="projetos"><div class="flex justify-between items-end mb-12">
-<div>
-<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Featured Projects</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Real-world applications of predictive modeling and analytics.</p>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Project Card 1 -->
-<a class="group block bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden transition-all cursor-pointer onclick="window.location.href='projeto-churn-details.html'">
-<div class="aspect-video overflow-hidden">
-<img alt="Customer Churn Prediction" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2hFd2wbCkQ1DZ6cQYUFrPNG8or9tY2sSJEfdPorzlfZJomNHJZdeb4CGMZI1mnaIfn50u02Sy63hcr6J7tiVdeL3p8Oo9_XMX3sQ9YyPmaN6bxS5L8dOc7-kBrxl4vou5mPlCKi-1LuHuII5y8Zf_Vlo0Jf02Pbx4I8yQXHILVchrP2gsfVDuk6_bFrxhPdvWQPiCILXuxv0BoGTFHB3mOQAPa0_XWSPMQgP7A0dQWkRWvDIoeGqxwVaME9b6xmckduBXjo_zDOI">
+</section>
+<!-- 5. Featured Projects Section (Moved to Bottom) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full" id="projetos">
+<div class="flex flex-col items-center mb-12">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-4">Featured Projects</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant text-center max-w-2xl">A selection of technical solutions leveraging machine learning and advanced analytics to solve complex business problems.</p>
 </div>
-<div class="p-8">
-<span class="font-label-caps text-label-caps text-primary mb-3 block">MACHINE LEARNING</span>
-<h3 class="font-headline-md text-2xl text-on-surface mb-3">Customer Churn Prediction Model</h3>
-<p class="font-body-md text-on-surface-variant">Developed a machine learning pipeline to predict user attrition with 92% accuracy, allowing targeted retention strategies that saved $2M annually.</p>
+<!-- Filter Navigation -->
+<div class="flex justify-center mb-12 border-b border-outline-variant/30">
+<div class="flex gap-8 overflow-x-auto pb-px">
+<button class="font-label-caps text-label-caps text-primary border-b-2 border-primary py-4 px-2 transition-all">All Projects</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary py-4 px-2 transition-all">Machine Learning</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary py-4 px-2 transition-all">Data Analysis</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary py-4 px-2 transition-all">Automation</button>
 </div>
-</a>
-<!-- Project Card 2 -->
-<a class="group block bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1" href="#">
-<div class="aspect-video overflow-hidden">
-<img alt="Supply Chain Optimization" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7YS4PlWmNPUklGPc6nGKFOLo33Wf9YeihKgXbdCvJxGxfUOyihqVCfMmL7st7g-WOh-sd7bjo3oEjzM-dVEJrB1StvbZwAd5JwmZIMI9l2awQ9oU6QH8VGHekm1c2VDJQ_z91w2z7jImSUGr-qTYayyfZrvTNFqDDunFTPxs9c5EkS_qbEbyjy2JzJaH0wJ2HI7C5tqFRVXRcnppBKFGwhWxgKEljEC2czkLEJOdrjUjC_Y-07196Byjv76tvf6OnXaGcWefdpIY">
 </div>
-<div class="p-8">
-<span class="font-label-caps text-label-caps text-tertiary mb-3 block">ANALYTICS</span>
-<h3 class="font-headline-md text-2xl text-on-surface mb-3">Supply Chain Optimization Dashboard</h3>
-<p class="font-body-md text-on-surface-variant">Engineered a real-time analytics dashboard aggregating data from 5 global warehouses, reducing inventory discrepancies by 15%.</p>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group cursor-pointer" onclick="window.location.href='projeto-churn-details.html'">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 border border-outline-variant/20 shadow-sm">
+<img alt="Customer Churn Prediction" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyOLy9zKSIFiK798KEM4NBAfkWKgc4iOBvIv6-Yz_y9tCpEb_uYdGG8qSeFlZADFEI-f7ppZhebM0I6HfR8vh1tHsWuSoaYqBcIo8pNWsIZpXE_JqJHO8SKxD9-ODmhAesPKAXnig3QqUGvxt8KQg07EV_hFVn-9NXST8xzkDNcMnDDOoV1d3XDhDPq9HgUA0Ciw-cUIgT4QD1d5HYpzKprg-LNUsChBQfApEicWRgjtYjIpQzVCpWWoO0fipGdbIN-eWS3Ll24iM"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">search</span>
 </div>
-</a>
-<!-- Project Card 3 -->
-<a class="group block bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1" href="#">
-<div class="aspect-video overflow-hidden">
-<img alt="Sentiment Analysis" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHyfOH6WEVYy5c-Z4R_y6re4hMJJzDa24sbtRFmwHsAXSHR9kHT6iQ8B6vv-nxogrtwFejE6b7bZug4E4KExI36l4_9Mt7J9aYt9-7f7e62u_6fIAmy4653AA1ofKK6bHLRqXqiERsAiQugu_DrzWnqQ48MSZIrZZ2F28UGrMN2pR6fon6_DSvnnKjTDcV6LEMXv019Sg49I-jpJwIFYYlIJkHdz4mKmJnz1uCUyknhnMWfTPBdRuh15cOOu-DX235y86rx8GY89I">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">arrow_forward</span>
 </div>
-<div class="p-8">
-<span class="font-label-caps text-label-caps text-primary mb-3 block">NLP</span>
-<h3 class="font-headline-md text-2xl text-on-surface mb-3">Sentiment Analysis Engine</h3>
-<p class="font-body-md text-on-surface-variant">Built an NLP model to categorize over 100k customer reviews monthly, extracting key feature requests and identifying critical bugs automatically.</p>
 </div>
-</a>
-<!-- Project Card 4 (Placeholder for balance) -->
-<a class="group block bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1" href="#">
-<div class="aspect-video overflow-hidden">
-<img alt="Fraud Detection" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1z0duslnbt6LZwKc0L7u1pKr__qQAsqBIPPAhxM3lvS2w06yMeIniWJ6lG7MmLPD6XvagqDOB6TP1BAnoy0Him5-d15NWaw-2Yf1Y64G0xnlUMi3zqfecxMDYnG2segP7RJ9Fgh7PZO91KSLceOZEw7AnJO9ZvAyXJxaaEHAmKtRVxE0FSHFho1B3bojUy55BaZmS-l0BHGhNTcsHMX0g2n4E9qPrQ00kRUkFd4-IAhAAUZekMawR6lnWizjgpFXLNrurx01ZO54">
 </div>
-<div class="p-8">
-<span class="font-label-caps text-label-caps text-tertiary mb-3 block">DEEP LEARNING</span>
-</div></a></div></section></main>
-
-
-
-
+<h3 class="font-headline-md text-xl text-on-surface font-bold mb-2 group-hover:text-primary transition-colors">Customer Churn Prediction</h3>
+<p class="font-body-md text-on-surface-variant">Predictive model using XGBoost to identify high-risk customers and optimize retention strategies.</p>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 border border-outline-variant/20 shadow-sm">
+<img alt="Supply Chain Optimization" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCClhbW8Xhqmb5v6Bj22d4pA7Q1jVC_q3rDZARRzXXHuBxnPq0n9MyVIg10WdrRBFxrfvuq2Umic8NRrMMytGnsHGGVL9pkHtxfF4Myesogih9XouR5Vtds200uI90G-i3A0dBSo7BncKGEy1yWfqrwDqU2oOuZ90MQbcBKqRXPO_WaePYo_6dE-wXoKIIBKBJp8JbOSbbhzAda0FB2_Bc8y8cRF8nuQ-5j-VJlpmItAOoMoqTo8cf2Q-QrB7osi6tm2fgJqYpiMzc"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">search</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+<h3 class="font-headline-md text-xl text-on-surface font-bold mb-2 group-hover:text-primary transition-colors">Supply Chain Optimization</h3>
+<p class="font-body-md text-on-surface-variant">Linear programming solution to minimize logistics costs while maintaining service level agreements.</p>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 border border-outline-variant/20 shadow-sm">
+<img alt="Real-time Dashboard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbmmfKysCP5MeNTKl5fkfII6OO7u2DHRjbzJkunYIxRtXfHXeBNUYJt-7ocL9UbkiIrAgOS9kXQa4W7G5HcIcahe5Hb0lkdEAYG3qxfaiLq-Cs5Tta4rvCRgYKvthVcK_27WlWlOoKCQWnzWvjY26n6INDfKiT54AmI2QjGtlkwzScn1iQjzYaD2PW9q1tYHvpsOgePFtdOJtlln507sFtdCuhK7jXznvP1OvI-xSA20PLtLCn0D2vI9HLY9BsUHeOCU1noocmY6o"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">search</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+<h3 class="font-headline-md text-xl text-on-surface font-bold mb-2 group-hover:text-primary transition-colors">Industrial KPI Dashboard</h3>
+<p class="font-body-md text-on-surface-variant">Automated Power BI reporting system for real-time monitoring of manufacturing efficiency.</p>
+</div>
+</div>
+</section>
+</main>
 </body></html>
