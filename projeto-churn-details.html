@@ -1,162 +1,55 @@
-<!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Customer Churn Prediction Model - Project Details</title>
+<!DOCTYPE html><html class="light" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Predição de Churn de clientes - Detalhes do Projeto</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "tertiary-fixed": "#f4dfcb",
-                "surface-variant": "#e6e0dd",
-                "inverse-surface": "#31302e",
-                "on-error-container": "#410002",
-                "secondary-container": "#ffdcbe",
-                "inverse-primary": "#f8b7a4",
-                "error": "#ba1a1a",
-                "on-secondary-fixed-variant": "#644222",
-                "on-secondary": "#ffffff",
-                "on-surface-variant": "#484644",
-                "secondary-fixed-dim": "#f1be95",
-                "on-tertiary": "#ffffff",
-                "tertiary-container": "#ffdcc5",
-                "on-error": "#ffffff",
-                "surface-tint": "#8c4f3e",
-                "on-secondary-fixed": "#2c1600",
-                "primary": "#8c4f3e",
-                "on-primary-fixed": "#3a0b01",
-                "surface-dim": "#dadad6",
-                "background": "#faf9f5",
-                "surface-container-highest": "#e2e2de",
-                "on-tertiary-fixed": "#2c1505",
-                "on-primary-container": "#3a0b01",
-                "on-primary": "#ffffff",
-                "on-background": "#1a1c1b",
-                "primary-container": "#ffdad2",
-                "on-primary-fixed-variant": "#713928",
-                "surface-container": "#eeeeea",
-                "primary-fixed": "#ffdad2",
-                "tertiary": "#775742",
-                "surface-container-high": "#e8e8e4",
-                "on-surface": "#1a1c1b",
-                "secondary-fixed": "#ffdcbe",
-                "on-secondary-container": "#2c1600",
-                "on-tertiary-container": "#2c1505",
-                "surface-container-low": "#f4f4f0",
-                "surface-bright": "#faf9f5",
-                "error-container": "#ffdad6",
-                "outline-variant": "#cec5c2",
-                "tertiary-fixed-dim": "#eec0a0",
-                "primary-fixed-dim": "#f8b7a4",
-                "inverse-on-surface": "#f3f0ee",
-                "surface": "#faf9f5",
-                "secondary": "#7e5737",
-                "surface-container-lowest": "#ffffff",
-                "on-tertiary-fixed-variant": "#5d402b",
-                "outline": "#7e7673"
-        },
-        "borderRadius": {
-                "DEFAULT": "0.25rem",
-                "lg": "0.5rem",
-                "xl": "0.75rem",
-                "full": "9999px"
-        },
-        "spacing": {
-                "section-gap": "120px",
-                "margin-mobile": "20px",
-                "base": "8px",
-                "gutter": "24px",
-                "container-max": "1200px"
-        },
-        "fontFamily": {
-                "label-caps": [
-                        "JetBrains Mono"
-                ],
-                "headline-md": [
-                        "Hanken Grotesk"
-                ],
-                "display-lg-mobile": [
-                        "Hanken Grotesk"
-                ],
-                "body-md": [
-                        "Inter"
-                ],
-                "display-lg": [
-                        "Hanken Grotesk"
-                ],
-                "code-sm": [
-                        "JetBrains Mono"
-                ],
-                "body-lg": [
-                        "Inter"
-                ]
-        },
-        "fontSize": {
-                "label-caps": [
-                        "12px",
-                        {
-                                "lineHeight": "1",
-                                "letterSpacing": "0.1em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "headline-md": [
-                        "32px",
-                        {
-                                "lineHeight": "1.3",
-                                "fontWeight": "600"
-                        }
-                ],
-                "display-lg-mobile": [
-                        "40px",
-                        {
-                                "lineHeight": "1.2",
-                                "fontWeight": "700"
-                        }
-                ],
-                "body-md": [
-                        "16px",
-                        {
-                                "lineHeight": "1.5",
-                                "fontWeight": "400"
-                        }
-                ],
-                "display-lg": [
-                        "64px",
-                        {
-                                "lineHeight": "1.1",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "700"
-                        }
-                ],
-                "code-sm": [
-                        "14px",
-                        {
-                                "lineHeight": "1.4",
-                                "fontWeight": "400"
-                        }
-                ],
-                "body-lg": [
-                        "18px",
-                        {
-                                "lineHeight": "1.6",
-                                "fontWeight": "400"
-                        }
-                ]
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#4a7c59", // Deep Olive Green
+                        "on-primary": "#ffffff",
+                        "secondary": "#c36a4d", // Terracotta
+                        "on-secondary": "#ffffff",
+                        "background": "#fdfaf1", // Soft Cream/Off-white
+                        "on-background": "#2c3e2d", // Dark Olive text
+                        "surface": "#f7f3e8",
+                        "on-surface": "#2c3e2d",
+                        "surface-variant": "#eee8d5",
+                        "on-surface-variant": "#5a6350",
+                        "outline": "#b7bcad",
+                        "outline-variant": "#d4d8c8",
+                        "primary-container": "#cfe2d4",
+                        "on-primary-container": "#0c2b18"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.25rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "display": ["Nunito Sans", "sans-serif"],
+                        "body": ["Nunito Sans", "sans-serif"],
+                        "code": ["JetBrains Mono", "monospace"]
+                    }
+                },
+            },
         }
-},
-    },
-  }
-</script>
+    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -164,28 +57,32 @@
         body {
             background-color: theme('colors.background');
             color: theme('colors.on-background');
+            font-family: theme('fontFamily.body');
         }
         .glass-panel {
-            background: theme('colors.surface-container-low');
+            background: theme('colors.surface');
             border: 1px solid theme('colors.outline-variant');
+            box-shadow: 0 4px 20px -2px rgba(74, 124, 89, 0.08);
+        }
+        h1, h2, h3 {
+            font-family: theme('fontFamily.display');
+            font-weight: 800;
+            color: theme('colors.primary');
         }
     </style>
 </head>
-<body class="font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto bg-background/90 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300 ease-in-out font-body-md text-body-md">
-<div class="font-display-lg-mobile text-display-lg-mobile font-bold text-primary">
-            DataSciencePortfolio
-        </div>
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto bg-background/90 backdrop-blur-md border-b border-outline-variant transition-all duration-300 ease-in-out font-medium">
+<div class="text-2xl font-extrabold text-primary tracking-tight">Portfolio
+    </div>
 <div class="hidden md:flex space-x-8 items-center">
-<a class="text-on-surface hover:text-primary transition-colors hover:bg-surface-container-high px-3 py-2 rounded-md" href="#">Home</a>
-<a class="text-primary border-b-2 border-primary px-3 py-2" href="#">Projects</a>
-<a class="text-on-surface hover:text-primary transition-colors hover:bg-surface-container-high px-3 py-2 rounded-md" href="#">About</a>
-<a class="text-on-surface hover:text-primary transition-colors hover:bg-surface-container-high px-3 py-2 rounded-md" href="#">Contact</a>
+<a class="text-on-surface hover:text-primary transition-colors px-3 py-2 rounded-lg hover:bg-surface-variant/50" href="#">Início</a>
+<a class="text-primary border-b-2 border-primary px-3 py-2" href="#">Projetos</a>
 </div>
-<button class="hidden md:flex items-center gap-2 bg-primary text-on-primary px-6 py-2.5 rounded hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors font-body-md font-medium">
-            Get in Touch
-        </button>
+<button class="hidden md:flex items-center gap-2 bg-primary text-on-primary px-6 py-2.5 rounded-lg hover:brightness-110 transition-all shadow-md font-bold">
+        Contato
+    </button>
 <button class="md:hidden text-on-surface">
 <span class="material-symbols-outlined text-2xl">menu</span>
 </button>
@@ -193,97 +90,93 @@
 <main class="pt-[100px] pb-section-gap">
 <!-- Hero Section -->
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-12 md:pt-24 pb-16 text-center">
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 max-w-4xl mx-auto">
-                Customer Churn Prediction Model
-            </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
-                A robust machine learning pipeline designed to identify high-risk customers before they cancel subscriptions, enabling proactive retention strategies and maximizing lifetime value.
-            </p>
+<h1 class="text-4xl md:text-6xl mb-6 max-w-4xl mx-auto leading-tight">
+            Predição de Churn de clientes
+        </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto mb-12 font-medium">
+            Modelo preditivo em Python utilizando Random Forest e Regressão Logística para identificar clientes de alto risco e otimizar estratégias de retenção.
+        </p>
 </section>
 <!-- Main Content Area -->
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 <!-- Left Column: Image Gallery -->
 <div class="lg:col-span-7 flex flex-col space-y-8">
-<div class="rounded-xl overflow-hidden glass-panel group relative">
-<img class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed, modern data visualization dashboard displayed on a high-resolution dark mode screen. The dashboard features complex network graphs, predictive line charts in neon green and amber, and analytical heatmaps. The lighting is low and focused on the screen, creating a moody, high-tech, and analytical atmosphere consistent with a professional data science environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRACcY9GLEynhqc3q9m8amHEAG1D05HgDhcA2xgosrVUluduy0vtMK-ii11GxkZzcPkbgW6RwGSl0agxA_zZjFXH5qb897lsTnN2PsUnjRyg7tcurfgkAX-nXOvbJ16o-mAo21ojiISJl9pdkzbIUm7ikg1Quz70WHo1XwZ44NkqbSt--gYl0W3MKaOwVzAc4utArTgNNo_inO8YjHy80roUsTYRvDW9MU2gu_0OR2sEdDslUssOKHVQdCfnlT4pwY9H2KAdAyd_k"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-<span class="font-label-caps text-label-caps text-primary tracking-widest">Interactive Dashboard Prototype</span>
+<div class="rounded-xl overflow-hidden glass-panel group relative shadow-xl border border-outline-variant">
+<img alt="Pôster científico do projeto de predição de churn comparando Regressão Logística e Random Forest" class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfmBYQc4zP0fYhoHpA5tYV2uJ8HiSircN5DSgNpvOcHTYjcb4I_sdPfVwCM1m0VhEC85EJu4DPpOOS81GlojijVWRrUoazSei3-AuleDkB1B7S3jybJhbde8mqvt-JPb2YL7gwk-nWfmcvLLry4l2X9MXHcSukPVqgEXvcSaWTDSAlCKVMgUeWLdGbGTEzg_U9_AsNhY2Zwop1506HjSkBUVdlBvrumHB7-GduRoW1xIAaazjtb_QTZo-4jiBGWn7eG3xX409YfvY">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-xs font-bold text-on-primary tracking-widest bg-primary/80 px-3 py-1 rounded backdrop-blur-sm uppercase">Relatório Técnico Detalhado</span>
 </div>
 </div>
-<div class="rounded-xl overflow-hidden glass-panel group relative">
-<img class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" data-alt="A conceptual macro shot of glowing green fiber optic cables transmitting data packets against a deep slate and black background. The depth of field is shallow, emphasizing the speed and complexity of data flow. Earthy brown and gold reflections hint at the underlying hardware. The mood is sophisticated, technical, and forward-looking, perfectly matching a dark mode tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY-4vNevWU78zE3cOPGObp5DoUnhYALC1RWZnVVyVvyfuJLSHPksnA1pY10JFtwDZAPJT5YPOKS1QhfKpZTOWhou9lESK2BXdKdO9cMxhW5ImcaX9FA2q0YN3KeTYloLLSuDb3eUpS5IseL3gGDkyDxePocnfCqZmUZKTRPXN3z128zdgVGfD1hvdjrz_A-TcEUKL3uz0sbe0oOlHpw3iOgUhi0m92QQaqitAfhCpmrFcx3Kme0xT166eqbkUnJYkUiwrpj4T-AZ0"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-<span class="font-label-caps text-label-caps text-primary tracking-widest">Data Flow Architecture</span>
+<div class="space-y-4">
+<div class="rounded-xl overflow-hidden glass-panel shadow-lg border border-outline-variant bg-white/50 p-4">
+<img alt="Matriz de Confusão: Comparação entre Regressão Logística e Random Forest" class="w-full h-auto object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeEHU1XHjf4kIg_h4ZzztPIzg5RJ1-rW05b2wOwkJ9FBY98aTLHPrqdR57Rl8tIEtyNpVu6EeadEW3BfTIAT8AGLA8kTk7mqCv9DyoNih4uHaXzVjsCZv-ymhJT0TojTjwlHGGCDuwvoOu6vysSL2u6GCRJSXbgO2koNS_O7W5lKZjKe_hV88rZIJI007cMH7opGcUoVvsmQgBRiPv2h3v8DfFyW_D_m3zKd_LHagVFnNYWg7yHNcaRpmYSoXYaiosG6oPOb_cXCY">
 </div>
-</div>
-</div>
+<p class="text-sm font-medium text-on-surface-variant text-center italic">
+        Fig 2. Matriz de Confusão: Comparação entre Regressão Logística e Random Forest.
+    </p>
+</div></div>
 <!-- Right Column: Project Details -->
 <div class="lg:col-span-5 flex flex-col space-y-12">
 <div>
-<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Deep Dive into Customer Retention</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">
-                        In an increasingly competitive digital landscape, retaining existing users is significantly more cost-effective than acquiring new ones. This project addresses the critical challenge of predicting which users are most likely to churn based on their historical behavior and demographic data.
-                    </p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                        By deploying advanced ensemble methods and deep learning architectures, we shifted the focus from reactive damage control to proactive customer success interventions.
-                    </p>
+<h2 class="text-3xl mb-6">Foco Estratégico em Retenção</h2>
+<p class="text-on-surface-variant mb-4 leading-relaxed">
+                    Neste projeto, abordamos o desafio crítico de prever o cancelamento de planos (churn) em uma operadora de telecomunicações. A análise comparativa entre modelos paramétricos e não paramétricos permitiu identificar os padrões comportamentais que precedem a evasão.
+                </p>
+<p class="text-on-surface-variant leading-relaxed">
+                    Utilizamos técnicas de engenharia de atributos e tratamento de desbalanceamento de classes para garantir que o modelo não apenas fosse preciso, mas que tivesse um alto <i class="text-secondary font-semibold">recall</i>, capturando o máximo de evasões reais possíveis.
+                </p>
 </div>
-<div class="glass-panel p-8 rounded-lg relative overflow-hidden">
-<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
-<span class="material-symbols-outlined text-secondary text-4xl mb-4 block" style="font-variation-settings: 'FILL' 1;">format_quote</span>
-<p class="font-body-md text-body-md italic text-on-surface mb-6">
-                        "The implementation of this predictive model allowed our client to reduce monthly churn rates by 14% within the first quarter, directly translating to an annualized revenue preservation of over $1.2M."
-                    </p>
+<div class="glass-panel p-8 rounded-xl relative overflow-hidden bg-white/50">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-secondary"></div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-4 block" style="font-variation-settings: &quot;FILL&quot; 1;">format_quote</span>
+<p class="text-lg italic text-on-surface mb-6 leading-relaxed">
+                    "O modelo não paramétrico superou o linear ao capturar padrões complexos, enquanto o ajuste de profundidade do modelo de árvores evitou o overfitting. O recall de 85,00% valida a eficiência prática do algoritmo."
+                </p>
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container border border-outline-variant">
-<img class="w-full h-full object-cover" data-alt="A professional headshot of a data scientist, female, late 30s, looking confidently at the camera. She is wearing a dark, tailored blazer over a subtle forest green blouse. The background is a blurred, modern tech office with low, ambient lighting and hints of glass and steel. The overall tone is authoritative, intelligent, and refined." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEggVxiEvQGXQMwrk39616pCfticd7-M5p5DPlQgkWww8SBS1ZS0a3GGi0fF6s8PihqD6WkL0KTOKp0eiLM_QfrG0-0Vw_gFgkhKqaoC7OJxJ5j80Q2j4gNAXTGKZd6vAY39uHUn6JPmhlhUiitG9llu9CoXtzpOK05Opq68Y1KMqic6AvfoHakuQpemAGs6f1EKk3eLdxE7L-Ch3V1Xsbg-IR_qbyXb0nuH8Ij49Kdyg1EgeN-Mmfy240-dbzH8FCShw6k3jk1vE"/>
-</div>
 <div>
-<p class="font-label-caps text-label-caps text-primary font-bold">Dr. Elena Rostova</p>
-<p class="font-code-sm text-code-sm text-on-surface-variant">Lead Data Scientist</p>
 </div>
 </div>
 </div>
 <!-- Metrics Grid -->
 <div class="grid grid-cols-2 gap-4">
-<div class="glass-panel p-6 rounded-lg text-center border-t-2 border-t-primary">
-<p class="font-display-lg-mobile text-display-lg-mobile text-primary font-bold mb-1">92%</p>
-<p class="font-label-caps text-label-caps text-on-surface-variant">Model Accuracy</p>
+<div class="glass-panel p-6 rounded-xl text-center border-t-4 border-t-primary bg-white/40">
+<p class="text-4xl text-primary font-black mb-1">85%</p>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Recall (RF Teste)</p>
 </div>
-<div class="glass-panel p-6 rounded-lg text-center border-t-2 border-t-secondary">
-<p class="font-display-lg-mobile text-display-lg-mobile text-secondary font-bold mb-1">0.89</p>
-<p class="font-label-caps text-label-caps text-on-surface-variant">F1 Score (Churn Class)</p>
+<div class="glass-panel p-6 rounded-xl text-center border-t-4 border-t-secondary bg-white/40">
+<p class="text-4xl text-secondary font-black mb-1">0.85</p>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">ROC AUC&nbsp;<span style="letter-spacing: 1.2px;" class="">(RF Teste)</span></p>
 </div>
 </div>
 <!-- Sidebar Information -->
 <div class="space-y-8 pt-8 border-t border-outline-variant">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-6">Project Information</h3>
+<h3 class="text-2xl mb-6">Informações do Projeto</h3>
 <div class="grid grid-cols-2 gap-y-6">
 <div>
-<p class="font-label-caps text-label-caps text-outline mb-1 tracking-widest">CATEGORY</p>
-<p class="font-body-md text-body-md text-on-surface">Machine Learning</p>
+<p class="text-xs font-bold text-outline mb-1 tracking-widest uppercase">Categoria</p>
+<p class="font-semibold text-on-surface">Machine Learning</p>
 </div>
 <div>
-<p class="font-label-caps text-label-caps text-outline mb-1 tracking-widest">CLIENT</p>
-<p class="font-body-md text-body-md text-on-surface">FinTech Innovations</p>
+<p class="text-xs font-bold text-outline mb-1 tracking-widest uppercase">Dataset</p>
+<p class="font-semibold text-on-surface">Telco Customer Churn</p>
 </div>
 <div>
-<p class="font-label-caps text-label-caps text-outline mb-1 tracking-widest">DATE</p>
-<p class="font-body-md text-body-md text-on-surface">Q3 2023</p>
+<p class="text-xs font-bold text-outline mb-1 tracking-widest uppercase">Data</p>
+<p class="font-semibold text-on-surface">Abril 2024</p>
 </div>
 <div>
-<p class="font-label-caps text-label-caps text-outline mb-1 tracking-widest">REPOSITORY</p>
-<a class="font-body-md text-body-md text-primary hover:text-primary-fixed transition-colors underline decoration-primary/50 underline-offset-4" href="#">GitHub Link</a>
+<p class="text-xs font-bold text-outline mb-1 tracking-widest uppercase">Repositório</p>
+<a class="inline-block bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-bold hover:brightness-110 transition-all shadow-md text-sm uppercase tracking-wider" href="https://github.com/Urpia-S/Projeto_Churn_em_Python_Machine_Learning" target="_blank" rel="noopener noreferrer">acessar projeto completo</a>
 </div>
 </div>
 <div>
-<p class="font-label-caps text-label-caps text-outline mb-3 tracking-widest">TECH STACK</p>
+<p class="text-xs font-bold text-outline mb-3 tracking-widest uppercase">Tech Stack</p>
 <div class="flex flex-wrap gap-2">
-<span class="font-code-sm text-code-sm px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/20">Python</span>
-<span class="font-code-sm text-code-sm px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/20">TensorFlow</span>
-<span class="font-code-sm text-code-sm px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/20">XGBoost</span>
-<span class="font-code-sm text-code-sm px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/20">Pandas</span>
-<span class="font-code-sm text-code-sm px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/20">Scikit-learn</span>
+<span class="text-sm font-code px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/10 font-medium">Python</span>
+<span class="text-sm font-code px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/10 font-medium">Random Forest</span>
+<span class="text-sm font-code px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/10 font-medium">Logistic Regression</span>
+<span class="text-sm font-code px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/10 font-medium">Scikit-learn</span>
+<span class="text-sm font-code px-3 py-1 bg-primary-container text-on-primary-container rounded-full border border-primary/10 font-medium">Pandas</span>
 </div>
 </div>
 </div>
@@ -291,14 +184,19 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-section-gap px-margin-mobile flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto bg-surface-container border-t border-outline-variant font-body-md text-body-md">
-<div class="font-label-caps text-label-caps text-on-surface-variant mb-6 md:mb-0">
-            © 2024 Data Science Portfolio. Built with technical rigor.
-        </div>
-<div class="flex space-x-6">
-<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">LinkedIn</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">GitHub</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Kaggle</a>
+<footer class="w-full py-16 px-margin-mobile flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto bg-surface border-t border-outline-variant">
+<div class="text-sm font-bold text-on-surface-variant mb-6 md:mb-0 uppercase tracking-wider">
+        © 2024 Data Science Portfolio.&nbsp;</div>
+<div class="flex space-x-8">
+<a class="font-bold text-on-surface-variant hover:text-secondary transition-colors" href="#">LinkedIn</a>
+<a class="font-bold text-on-surface-variant hover:text-secondary transition-colors" href="#">GitHub</a>
+
 </div>
 </footer>
+
+
+
+
+
+
 </body></html>

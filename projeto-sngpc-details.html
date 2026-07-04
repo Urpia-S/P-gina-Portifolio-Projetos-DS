@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="pt-BR" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#4a7c59", // Deep Olive Green
+                        "on-primary": "#ffffff",
+                        "secondary": "#c16645", // Terracotta
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f7f2", // Soft Cream
+                        "on-background": "#2d3436",
+                        "surface": "#ffffff",
+                        "on-surface": "#2d3436",
+                        "surface-variant": "#f1eee6",
+                        "on-surface-variant": "#5a6366",
+                        "outline": "#d1ccc0",
+                        "outline-variant": "#e2ded3",
+                        "primary-container": "#d9e8dc",
+                        "on-primary-container": "#1e3325"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.75rem", // ROUND_TWELVE
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "sans": ["Nunito Sans", "sans-serif"],
+                        "display": ["Nunito Sans", "sans-serif"],
+                        "body": ["Nunito Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-background text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-background/80 backdrop-blur-md border-b border-outline-variant fixed top-0 w-full z-50 transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto w-full">
+<a class="text-2xl font-bold text-primary" href="#">Portfólio</a>
+<nav class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-semibold" href="#">Home</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold" href="#">Projetos</a>
+</nav>
+<button class="hidden md:inline-flex bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:brightness-110 transition-all rooted-shadow">
+            Entre em Contato</button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+<!-- Hero Title -->
+<div class="text-center mb-16 max-w-4xl mx-auto">
+<h1 class="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">Monitoramento Ambiental de Fármacos no Esgoto — SNGPC</h1>
+<p class="text-lg md:text-xl text-on-surface-variant leading-relaxed">Estimativa da concentração potencial de fármacos no esgoto a partir de dados do SNGPC. Análise desenvolvida em R com padronização de princípios ativos, simulação de Monte Carlo para propagação de incerteza e visualizações analíticas.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Left Column: Visuals -->
+<div class="md:col-span-7 space-y-8">
+<div class="bg-white rounded-xl overflow-hidden rooted-shadow aspect-video relative border border-outline-variant">
+<img alt="Visualização do projeto de monitoramento ambiental de fármacos em águas residuais" class="w-full h-full object-cover absolute inset-0" src="https://lh3.googleusercontent.com/aida/AP1WRLusqzKA68EkhbhHknFkzHCK-D6RfYUGxoIJCRhOaeW8hPRlFj8pf7-Z92gkxvkPxhtm3vFV4SHHA5nPXINzBdtAl4LHNMxhwjoThVC6SJlLgV_kSlRto_Kk9fQTlQPibGedcJEf5EHZzrBzglxNsZL3ACavmxj9dv2R16kjhPc1BIPxSyCNbEtmOdb-lbm6_QMTxjbitoVrYaFo1xE4U24jg6mY65SmQecdPaPWXkVeIOJnOcjq26wAojo">
+</div>
+<div class="bg-white rounded-xl overflow-hidden rooted-shadow aspect-[4/3] relative border border-outline-variant">
+<img alt="Visualização do monitoramento ambiental de Azitromicina" class="w-full h-full object-contain absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMtUo9zSMf6fC0D7AZ1zLrQmu6narqgpy87JzRKA3GIpFlBjypcpQpQzg67cZvM9YgWLPJnQhTDhTWziP8qR1CEiuEqxVCzEVGZGT3PfS3mIkPMIF1LVK7BVmqzByYi-i-pP-2VbkBFQjHCcDdb-VpbTlWtMpWvxcibLQ1mDJbokeT5YGOlkaxgmwfWQ-49aplF2IiJZSwDql-3CSz63NE2Z_aBwdBMg8EVPcONBvdkexn_HzcqAbEgFFeY6uCHyw_gCjJ75Rm--c">
+</div>
+<div class="bg-white rounded-xl overflow-hidden rooted-shadow aspect-[4/3] relative border border-outline-variant">
+<img alt="Distribuição Espacial por Princípio Ativo (Top 4)" class="w-full h-full object-cover absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxeqV1hinahXfyUSpUaVpcntCmioGYIrog_POkCZb3b_FUtwvH7IXkW57r4EvIEs5XPc5RIkI6oQnHa0sob29HIGZXrIxVcsFiEA--wZgpBVcLKN91MkobYiknSBXJigFfUfeq7ydAs2HJqiGMB2G6wCAYDG2Re8yBqq56S051XhfyBr5jEgcGARNY-tpb-bnshugFJVafNRkKnsaVlcxV4wXH2Ixki2PZ_4sJ8ZKc1IsdbKs-jlJY4f9DlgvyBGX5mtNF_nqkge8">
+</div>
+<div class="space-y-6 pt-8 border-t border-outline-variant">
+<div class="space-y-2">
+<p class="text-xs font-bold text-secondary uppercase tracking-widest">UNESCO - IWRA Online Conference</p>
+<h4 class="text-2xl font-bold text-primary leading-tight">Certificado de Palestrante&nbsp; - Congresso internacional da UNESCO</h4>
+</div>
+<div class="bg-white rounded-xl overflow-hidden rooted-shadow aspect-video relative border border-outline-variant">
+<img alt="Certificado IWRA - Simão Urpia" class="w-full h-full object-cover absolute inset-0 hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1wsWfjqDzMAHnwU7YcY0qN4__-wabyyi_lCoQSumIclL5C8pRGP0Ib0S8ZpVvyCDczhWyjwTFGziE6gfUiaVHNYH5w2UFNZS5IFiDkxWZSIL5f_NqdbnQFxaGzqfoFPyZmSrVgVB9CE_YF1bTTUiXLpZUuWcZqgy4_nMkOy9ta8R-tP-9rIs4RD11uYQ1DnhLv6OCDZodtWEULlvK2KyOBTNFLrWCuFXxFf6892ZNv79P0m_zXq4gBVtpp0mjcAFqHwIzzJPAb3U">
+</div>
+</div></div>
+<!-- Right Column: Details -->
+<div class="md:col-span-5 space-y-12">
+<section>
+<h2 class="text-3xl font-bold text-primary mb-4">Visão Geral do Projeto</h2>
+<p class="text-on-surface-variant mb-4 leading-relaxed">
+                    Esta pesquisa utiliza dados de saúde pública do Sistema Nacional de Gerenciamento de Produtos Controlados (SNGPC) para modelar o perigo ambiental gerado a partir do consumo de fármacos.&nbsp;</p>
+<p class="text-on-surface-variant leading-relaxed">
+                    Ao aplicar parâmetros de modelagem e simulações de Monte Carlo, o projeto gera uma gama de concentrações ambientais prováveis (PEC) para diversos medicamentos em diferentes bacias urbanas.
+                </p>
+</section>
+<section class="">
+<h3 class="text-2xl font-bold text-primary mb-4">Metodologia &amp; Impacto</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                    O pipeline de análise segue um fluxo de trabalho rigoroso de ciência de dados, desde o matching de ingredientes ativos e modelágem matemática do fenomeno de contaminação até a avaliação probabilística de risco.
+                </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<span class="text-on-surface-variant"><strong class="text-on-surface">Limpeza de Dados:</strong> Pipeline automatizado em R para padronização da nomenclatura farmacológica.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<span class="text-on-surface-variant"><strong class="text-on-surface">Modelagem Estatística:</strong> Simulação de Monte Carlo utilizada para lidar com a variância nas taxas de excreção e vazão.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<span class="text-on-surface-variant"><strong class="text-on-surface">Insights Ambientais:</strong> Identificadas 8 classes farmacêuticas principais com alto risco de presença em ambiente aquático. E cidades prioritárias para aprofundamento do estudo.</span><span class="text-on-surface-variant"><br></span>
+</li>
+</ul>
+</section>
+<section class="border-t border-outline pt-8">
+<h3 class="text-2xl font-bold text-primary mb-6">Informações do Projeto</h3>
+<div class="space-y-6">
+<div>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mb-1">CARGO</p>
+<p class="text-on-surface font-semibold">Cientista de Dados Ambientais</p>
+</div>
+<div>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mb-1">STACK TECNOLÓGICA</p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full text-xs font-bold border border-primary/10">R</span>
+<span class="bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full text-xs font-bold border border-primary/10">Monte Carlo</span>
+<span class="bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full text-xs font-bold border border-primary/10">SNGPC</span>
+<span class="bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full text-xs font-bold border border-primary/10">Ciência de Dados</span>
+</div>
+</div>
+<div class="">
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mb-1">CRONOGRAMA</p>
+<p class="text-on-surface font-semibold">Ago 2023 - Presente</p>
+</div>
+</div>
+</section>
+<section class="border-t border-outline pt-8 mt-12">
+<h3 class="text-2xl font-bold text-primary mb-6">Publicações &amp; Reconhecimento</h3>
+<div class="space-y-8">
+<!-- ABES Publication -->
+<div class="bg-white p-6 rounded-xl border border-outline-variant rooted-shadow space-y-4">
+<p class="text-xs font-bold text-secondary uppercase tracking-widest">33° Congresso nacional da Associação Brasileira de Engenharia Sanitária e Ambiental</p>
+<h4 class="text-lg text-on-surface font-bold leading-tight">Fármacos presentes nos esgotos das capitais brasileiras: avaliação do risco ambiental baseado nos dados de vendas de medicamentos controlados.</h4>
+<div class="space-y-2">
+<p class="text-sm font-semibold text-on-surface">Autores:</p>
+<p class="text-sm text-on-surface-variant">S. P. O. Urpia, J. C. B. F. Bijos, V. M. Zanta, K. P. S. O. Rodriguez-Esquerre, L. M. Queiroz.</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed italic border-l-4 border-primary-container pl-3">
+                            Apresenta a estimativa de concentração ambiental prevista para princípios ativos de fármacos nas capitais brasileiras usando dados de vendas e recursos de ciência de dados.
+                        </p>
+</div>
+<!-- R Seminar Publication -->
+<div class="bg-white p-6 rounded-xl border border-outline-variant rooted-shadow space-y-4">
+<p class="text-xs font-bold text-secondary uppercase tracking-widest">Revista do Seminário Internacional de Estatística com R</p>
+<h4 class="text-lg text-on-surface font-bold leading-tight">Análise de dados aplicada à avaliação preliminar de risco da ocorrência de fármacos nos esgotos das capitais do Brasil.</h4>
+<div class="space-y-2">
+<p class="text-sm font-semibold text-on-surface">Autores:</p>
+<p class="text-sm text-on-surface-variant">S. P. O. Urpia, K. P. S. O. Rodriguez Esquerre, L. M. Queiroz, J. C. B. F. Bijos.</p>
+</div>
+<div class="flex items-center gap-4 text-xs font-bold">
+<span class="text-on-surface-variant">ANO: 2025</span>
+<span class="text-primary">DOI: 10.5281/zenodo.18929513</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed italic border-l-4 border-primary-container pl-3">
+                            Descreve o tratamento dos dados do SNGPC em R, a análise de massa vendida por princípio ativo e cidade, e a avaliação preliminar por CAP.
+                        </p>
+</div>
+<!-- IWRA Certificate -->
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- -->
+
+</body></html>

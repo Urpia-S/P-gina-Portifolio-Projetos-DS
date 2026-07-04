@@ -1,0 +1,206 @@
+<!DOCTYPE html><html class="light" lang="pt-br" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Olist E-commerce Analytics - Data Science Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "background": "#FDFBF7", // Soft cream/off-white
+                "on-background": "#2D3436",
+                "primary": "#4A7C59", // Deep Olive Green
+                "on-primary": "#FFFFFF",
+                "primary-container": "#E8F0EA",
+                "on-primary-container": "#1B3022",
+                "secondary": "#C87941", // Terracotta
+                "on-secondary": "#FFFFFF",
+                "secondary-container": "#FBE9DB",
+                "on-secondary-container": "#4A2C18",
+                "surface": "#FAF7F2",
+                "on-surface": "#2D3436",
+                "surface-variant": "#F2EDE4",
+                "on-surface-variant": "#5D6365",
+                "outline": "#D1C7B7",
+                "outline-variant": "#E8E2D9"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.75rem",
+                "lg": "0.75rem",
+                "xl": "1rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "gutter": "24px",
+                "section-gap": "120px",
+                "margin-mobile": "20px",
+                "container-max": "1200px",
+                "base": "8px"
+            },
+            "fontFamily": {
+                "display-lg": ["Nunito Sans", "sans-serif"],
+                "headline-md": ["Nunito Sans", "sans-serif"],
+                "body-lg": ["Nunito Sans", "sans-serif"],
+                "body-md": ["Nunito Sans", "sans-serif"],
+                "label-caps": ["Nunito Sans", "sans-serif"],
+                "code-sm": ["JetBrains Mono", "monospace"]
+            },
+            "fontSize": {
+                "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }]
+            },
+            "boxShadow": {
+                "soft": "0 4px 20px -2px rgba(74, 124, 89, 0.08), 0 2px 10px -2px rgba(74, 124, 89, 0.04)"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .terra-panel {
+            background: #FAF7F2;
+            border: 1px solid #E8E2D9;
+            box-shadow: 0 4px 20px -2px rgba(74, 124, 89, 0.08);
+        }
+        .organic-image-shadow {
+            box-shadow: 0 10px 30px -5px rgba(74, 124, 89, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased flex flex-col min-h-screen font-body-md selection:bg-primary-container selection:text-on-primary-container"><nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto bg-background/90 backdrop-blur-md border-b border-outline-variant transition-all duration-300 ease-in-out font-medium">
+<div class="text-2xl font-extrabold text-primary tracking-tight">Portfolio
+    </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface hover:text-primary transition-colors px-3 py-2 rounded-lg hover:bg-surface-variant/50" href="#">Início</a>
+<a class="text-primary border-b-2 border-primary px-3 py-2" href="#">Projetos</a>
+</div>
+<button class="hidden md:flex items-center gap-2 bg-primary text-on-primary px-6 py-2.5 rounded-lg hover:brightness-110 transition-all shadow-md font-bold">
+        Contato
+    </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</nav>
+<main class="flex-grow pt-24 pb-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+<!-- Hero Header -->
+<header class="text-center max-w-3xl mx-auto mb-16 md:mb-24">
+<h1 class="font-display-lg-mobile md:font-display-lg text-primary mb-6 md:text-6xl">Olist E-commerce Analytics - SQL + Python</h1>
+<p class="font-body-lg text-on-surface-variant text-xl">Projeto de análise de e-commerce com a base pública da Olist.</p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main Content Area -->
+<div class="md:col-span-8 flex flex-col space-y-12">
+<!-- Visualization 1 -->
+<div class="rounded-xl overflow-hidden organic-image-shadow aspect-video relative flex items-center justify-center bg-surface-variant">
+<img alt="Olist E-commerce Analytics Visualization" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkOiz9tQVUtOV5ac0tp5_wNZzJ7W9w3egHCRwPSxgsVxd-uS41jBzb7MgArhQgsKPIQXYldT6WZ2zjQPO9ov3i8K0QsKPSYHLO4vv63ntxeRrsXC6LoJAGA4xh3zP1X-cjONPXyHSWhrTchJW3kYzevilqi3XFlMn3lg_UAtYavKj4oT0B84IScYhjn_r-wLIgU6oQZGsvhNVRedhcZqs-MbCwdW3bkin48t3NLZayYnKbdBcVXY0t9yVtz7e9JQdj9TbdSwyG8xI">
+</div>
+<!-- Text Content -->
+<article class="space-y-6"><h2 class="font-headline-md text-primary">Visão Geral do Projeto</h2><p class="text-on-surface-variant font-body-lg">Análise exploratória de dados de e-commerce utilizando SQL e Python. Este projeto é focdo especilamente na manipulação das bases relacionais através do SQL e na extração de métricas de performance e comportamento do consumidor.</p></article><section class="mt-12 space-y-6">
+<h2 class="font-headline-md text-primary">Estruturação e Etapas do Projeto</h2>
+<div class="terra-panel overflow-hidden rounded-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-primary-container/50 border-b border-outline-variant">
+<th class="p-4 font-label-caps text-primary uppercase tracking-wider">Notebook (Pipeline)</th>
+<th class="p-4 font-label-caps text-primary uppercase tracking-wider">Conteúdo e Objetivos</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<tr class="hover:bg-surface-variant/30 transition-colors">
+<td class="p-4 font-code-sm text-secondary">01_preparacao_base_colab.ipynb</td>
+<td class="p-4 text-on-surface-variant font-body-md">Upload/download de CSVs, carga em SQLite staging, criação de core e views.</td>
+</tr>
+<tr class="hover:bg-surface-variant/30 transition-colors">
+<td class="p-4 font-code-sm text-secondary">02_temporal_receita_colab.ipynb</td>
+<td class="p-4 text-on-surface-variant font-body-md">Análise de pedidos por tempo, evolução de receita, frete, segmentação por estados e categorias.</td>
+</tr>
+<tr class="hover:bg-surface-variant/30 transition-colors">
+<td class="p-4 font-code-sm text-secondary">03_entregas_satisfacao_colab.ipynb</td>
+<td class="p-4 text-on-surface-variant font-body-md">Monitoramento de prazos, atrasos, reviews de clientes e impacto da logística na satisfação.</td>
+</tr>
+<tr class="hover:bg-surface-variant/30 transition-colors">
+<td class="p-4 font-code-sm text-secondary">04_rfm_retencao_colab.ipynb</td>
+<td class="p-4 text-on-surface-variant font-body-md">Segmentação RFM (Recência, Frequência, Valor Monetário), análise de recompra e coortes de retenção.</td>
+</tr>
+<tr class="hover:bg-surface-variant/30 transition-colors">
+<td class="p-4 font-code-sm text-secondary">05_afinidade_vendedores_colab.ipynb</td>
+<td class="p-4 text-on-surface-variant font-body-md">Análise de categorias compradas juntas, performance de vendedores e resumo executivo.</td>
+</tr>
+<tr class="hover:bg-surface-variant/30 transition-colors">
+<td class="p-4 font-code-sm text-secondary">06_playground_consultas_sql_colab.ipynb</td>
+<td class="p-4 text-on-surface-variant font-body-md">Ambiente para testes de novas consultas SQL complexas e validação de métricas.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Visualization 2 -->
+<!-- Quote Block -->
+</div>
+<!-- Right Sidebar: Project Info -->
+<aside class="md:col-span-4 mt-12 md:mt-0">
+<div class="terra-panel p-8 rounded-xl sticky top-32">
+<h3 class="font-headline-md text-primary mb-8 border-b border-outline-variant pb-4">Project Information</h3>
+<div class="space-y-6">
+<div>
+<p class="font-label-caps text-secondary mb-1 uppercase tracking-wider">Category</p>
+<p class="font-body-md text-on-surface">E-commerce Analytics</p>
+</div>
+<div>
+<p class="font-label-caps text-secondary mb-1 uppercase tracking-wider">Tech Stack</p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="bg-primary-container text-on-primary-container font-code-sm px-3 py-1 rounded-full border border-primary/10">SQL</span>
+<span class="bg-primary-container text-on-primary-container font-code-sm px-3 py-1 rounded-full border border-primary/10">Python</span>
+<span class="bg-primary-container text-on-primary-container font-code-sm px-3 py-1 rounded-full border border-primary/10">Pandas</span>
+<span class="bg-primary-container text-on-primary-container font-code-sm px-3 py-1 rounded-full border border-primary/10">Matplotlib</span>
+<span class="bg-primary-container text-on-primary-container font-code-sm px-3 py-1 rounded-full border border-primary/10">Google Colab</span>
+</div>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant">
+<a class="inline-flex items-center justify-center gap-2 bg-secondary text-on-secondary px-6 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 hover:bg-primary w-full" href="https://github.com/Urpia-S/Olist_E-commerce_Analytic-SQL-Python" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">code</span><span class="">Acessar projeto completo</span></a>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-variant py-section-gap px-margin-mobile flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto w-full border-t border-outline-variant">
+<div class="mb-4 md:mb-0">
+<span class="font-label-caps text-on-surface-variant uppercase tracking-wider">© 2024 Data Science Portfolio.&nbsp;</span>
+</div>
+<div class="flex space-x-6">
+<a aria-label="LinkedIn" class="text-on-surface-variant hover:text-secondary transition-all hover:-translate-y-0.5" href="#">
+            LinkedIn
+        </a>
+<a aria-label="GitHub" class="text-on-surface-variant hover:text-secondary transition-all hover:-translate-y-0.5" href="#">
+            GitHub
+        </a>
+
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

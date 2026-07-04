@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="pt-BR" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "background": "#F9F7F2", // Soft off-white/cream (Terra)
+                            "primary": "#4a7c59",    // Deep Olive Green
+                            "on-primary": "#ffffff",
+                            "secondary": "#c87941",  // Terracotta
+                            "on-secondary": "#ffffff",
+                            "surface": "#ffffff",
+                            "on-surface": "#2d3436",
+                            "on-surface-variant": "#5a6366",
+                            "outline": "#d1d8d1",
+                            "outline-variant": "#e2e8e2",
+                            "surface-container": "#f1eee6",
+                            "surface-container-low": "#f6f3ed",
+                            "surface-container-lowest": "#faf9f6",
+                            "primary-container": "#e8f0e9",
+                            "on-primary-container": "#1b3322",
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.75rem",
+                            "lg": "0.75rem",
+                            "xl": "1rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "gutter": "24px",
+                            "section-gap": "100px",
+                            "margin-mobile": "20px",
+                            "container-max": "1200px",
+                            "base": "8px"
+                        },
+                        "fontFamily": {
+                            "display-lg": ["Nunito Sans"],
+                            "code-sm": ["JetBrains Mono"],
+                            "headline-md": ["Nunito Sans"],
+                            "body-lg": ["Nunito Sans"],
+                            "label-caps": ["JetBrains Mono"],
+                            "display-lg-mobile": ["Nunito Sans"],
+                            "body-md": ["Nunito Sans"]
+                        },
+                        "fontSize": {
+                            "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                            "code-sm": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                            "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                            "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                            "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                            "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    }catch(_e){}</script></head><body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav class="bg-background/80 backdrop-blur-md font-body-md text-body-md docked full-width top-0 border-b border-outline-variant/50 fixed w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto transition-all duration-300 ease-in-out">
+        <div class="flex items-center gap-4">
+            <span class="font-display-lg-mobile text-display-lg-mobile font-bold text-primary tracking-tight">Portfolio</span>
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-on-surface-variant hover:text-secondary transition-colors px-3 py-2" href="#">Início</a>
+            <a class="nav-link-active px-3 py-2 text-primary font-bold" href="#">Projetos</a>
+            
+            
+        </div>
+        <button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-body-md font-semibold hover:bg-primary/90 transition-all hover:shadow-md hidden md:block">Entre em Contato</button>
+        <button class="md:hidden text-on-surface">
+            <span class="material-symbols-outlined" data-icon="menu">menu</span>
+        </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-32 pb-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+        <!-- Hero Header -->
+        <header class="text-center mb-16 max-w-4xl mx-auto">
+            <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Mortalidade no Brasil 2023: Uma Análise Regional</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">Pipeline reprodutível em R para limpeza, normalização e visualização de dados do SIM, comparando Bahia, Santa Catarina e São Paulo.</p>
+        </header>
+
+        <!-- Two Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter">
+            <!-- Left Column: Visuals & Deep Dive -->
+            <div class="lg:col-span-8 flex flex-col gap-16">
+                
+                <!-- Section: Contexto -->
+                <section>
+                    <h2 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary" data-icon="info">info</span>
+                        Contexto do Problema
+                    </h2>
+                    <div class="prose prose-p:text-on-surface-variant prose-p:font-body-md prose-p:text-body-md max-w-none">
+                        <p class="">O desafio central foi o processamento de grandes volumes de dados brutos do Sistema de Informação sobre Mortalidade (SIM). A complexidade reside na despadronização de bases relacionais e na necessidade de decodificação rigorosa de categorias como CID-10 para extrair insights.</p>
+                    </div>
+                </section>
+
+                <!-- DataViz 1: Top Causas -->
+                <figure class="rounded-xl overflow-hidden border border-outline-variant bg-white p-4 shadow-sm">
+                    <div class="aspect-auto">
+                        <img alt="Principais causas de morte por UF" class="w-full h-auto object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOJicySzypCU_56UHAyRavQzKGfoAOR6kzOmYWtIMq9mnNFOriDQOjibtZS1h4HZWg1FcwnZM1BFscs4jOJtMuJuxEod7Aoe1LkGUzn5j4oDmV40BlzATsoFq3JCN3KrkKVDT6BQzMtwjZoChzEyMwA7Kgu_cryb4vZwnU6PeTFmvHkRNkv_DwjR9Ql7Lh-sc8Xt3aWfPJ5yDwTRKJGmpvQcpdKD-tJKxkv5XPRkGuivwyv8qOHHnoAEf56Fyp5QfHhNv2t6EaUBc">
+                    </div>
+                    <figcaption class="mt-4 text-center">
+                        <span class="font-code-sm text-code-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full uppercase font-bold">Fig 1. Ranking de Mortalidade</span>
+                        <p class="mt-2 font-body-md text-on-surface-variant">Predomínio de doenças isquêmicas no Sul/Sudeste versus o impacto de causas mal definidas e agressões no Nordeste.</p>
+                    </figcaption>
+                </figure>
+
+                <!-- Section: Metodologia -->
+                <section>
+                    <h2 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary" data-icon="engineering">engineering</span>
+                        Metodologia &amp; Engenharia
+                    </h2>
+                    <div class="prose prose-p:text-on-surface-variant prose-p:font-body-md prose-p:text-body-md max-w-none">
+                        <p class="">Desenvolvimento de rotinas em <code class="bg-surface-container px-1 rounded text-primary">R/Tidyverse</code> para ingestão de arquivos CSV/TXT, tratamento de zeros à esquerda em chaves territoriais e cruzamento com tabelas de domínio para decodificar faixas etárias, raça/cor e grupos de causas básicas.</p>
+                    </div>
+                </section>
+
+                <!-- DataViz 2: Perfil Demográfico -->
+                <figure class="rounded-xl overflow-hidden border border-outline-variant bg-white p-4 shadow-sm">
+                    <div class="aspect-auto">
+                        <img alt="Distribuição de óbitos por sexo e raça" class="w-full h-auto object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzkvJF2iKeP6o19eBsS2IBLe4KBU6_2IMvoZ1FMrFSPsuNpADMnTY54tfoRwR7mch9q7P8G73WHsb3_0AsxJ9QFsmPzhvyF9Se7q7rx0pIxz70RRVFA-OfnEb92D6VkAZhmcLqrE7cHZ3OMMctTxQXjd-KZLW9aStgXner9rUfAQfiyYscpULYfUieon_VQVF_1OHWZJhgq2Jh8EY9pmxtG0kYiw8RiYPiJeTrwfIWZdq2s2KKA1ba6LZzbG9rsfm2dTfT0lNrFHA">
+                    </div>
+                    <figcaption class="mt-4 text-center">
+                        <span class="font-code-sm text-code-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full uppercase font-bold">Fig 2. Disparidades Sociais</span>
+                        <p class="mt-2 font-body-md text-on-surface-variant">Visualização do impacto desproporcional na população negra e variações críticas nas faixas etárias de 15 a 44 anos.</p>
+                    </figcaption>
+                </figure>
+
+                <!-- Section: Resultados -->
+                <section>
+                    <h2 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary" data-icon="insights">insights</span>
+                        Principais Insights
+                    </h2>
+                    <div class="prose prose-p:text-on-surface-variant prose-p:font-body-md prose-p:text-body-md max-w-none space-y-4">
+                        <p class=""><strong>Divergência Regional:</strong> SP e SC concentram óbitos em doenças crônicas. Na Bahia, as "agressões" aparecem no top 4, indicando um desafio crítico de segurança pública e mortalidade precoce.</p>
+                        <p class=""><strong>Equidade:</strong> Observou-se uma desproporcionalidade severa na mortalidade da população negra na Bahia e em São Paulo, especialmente entre homens jovens, reforçando a necessidade de políticas de saúde específicas.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Sidebar Stats -->
+            <div class="lg:col-span-4">
+                <div class="bg-surface-container-low p-8 rounded-xl sticky top-32 border border-outline-variant">
+                    <h3 class="font-headline-md text-headline-md text-primary mb-8 border-b border-outline-variant pb-4">Visão Geral</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <span class="font-label-caps text-label-caps text-on-surface-variant uppercase block mb-1">Domínio</span>
+                            <span class="font-body-lg text-body-lg text-primary font-bold">Saúde Pública &amp; Epidemiologia</span>
+                        </div>
+                        <div>
+                            <span class="font-label-caps text-label-caps text-on-surface-variant uppercase block mb-1">Ano Base</span>
+                            <span class="font-body-lg text-body-lg text-on-surface">2023</span>
+                        </div>
+                        <div>
+                            <span class="font-label-caps text-label-caps text-on-surface-variant uppercase block mb-1">Competências</span>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-primary-container text-on-primary-container font-code-sm text-code-sm px-3 py-1 rounded-full border border-primary/20">Análise Descritiva</span>
+                                <span class="bg-primary-container text-on-primary-container font-code-sm text-code-sm px-3 py-1 rounded-full border border-primary/20">Data Engineering</span>
+                                <span class="bg-primary-container text-on-primary-container font-code-sm text-code-sm px-3 py-1 rounded-full border border-primary/20">Dataviz</span>
+                            </div>
+                        </div>
+                        <div class="">
+                            <span class="font-label-caps text-label-caps text-on-surface-variant uppercase block mb-1">Stack</span>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-white text-on-surface-variant font-code-sm text-code-sm px-3 py-1 rounded-full border border-outline">R (Language)</span>
+                                <span class="bg-white text-on-surface-variant font-code-sm text-code-sm px-3 py-1 rounded-full border border-outline">Tidyverse</span>
+                                <span class="bg-white text-on-surface-variant font-code-sm text-code-sm px-3 py-1 rounded-full border border-outline">ggplot2</span>
+                            </div>
+                        </div>
+                        <div class="pt-6 border-t border-outline-variant mt-8">
+                            <a class="inline-flex items-center justify-center w-full bg-primary text-on-primary hover:bg-primary/90 transition-all py-3.5 rounded-xl font-body-md font-bold group shadow-sm py-4 hover:shadow-md" href="https://github.com/Urpia-S/Projeto_Mortalidade_Dados_Relacionais_em_R">Acessar projeto completo
+                                <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" data-icon="open_in_new">open_in_new</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container text-on-surface-variant font-body-md text-body-md full-width border-t border-outline-variant w-full py-12 px-margin-mobile flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto mt-auto">
+        <div class="mb-4 md:mb-0 font-medium">
+            © 2024 Portfolio de Ciência de Dados.&nbsp;</div>
+        <div class="flex gap-6">
+            </div></footer>
+
+
+
+
+
+</body></html>
